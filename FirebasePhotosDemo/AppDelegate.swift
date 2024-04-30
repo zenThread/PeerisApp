@@ -2,20 +2,30 @@
 //  AppDelegate.swift
 //  FirebasePhotosDemo
 //
-//  Created by Duc Tran on 10/9/17.
-//  Copyright © 2017 Duc Tran. All rights reserved.
+//  Created by YanTech on 30/12/17.
+//  Copyright © 2017 YanTech. All rights reserved.
 //
 
 import UIKit
+import Firebase
+import IQKeyboardManagerSwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        // Connect with Firebase.
+        FirebaseApp.configure()
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         return true
     }
 

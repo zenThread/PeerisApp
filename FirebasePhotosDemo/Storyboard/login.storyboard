@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mqe-2r-c86">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="IYP-TG-hUu">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="mqe-2r-c86" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xj2-AP-5kL">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D4L-6g-YMW" kind="relationship" relationship="rootViewController" id="jJk-9H-Nf5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CR3-jk-Wqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="-859"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="JWh-pF-IB3">
+            <objects>
+                <viewController id="D4L-6g-YMW" customClass="signInViewController" customModule="Peeris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wym-jS-RJA" customClass="GradientViewAlt" customModule="Peeris" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="architecture-buildings-city-408951.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="69j-BO-NNf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="it6-0w-rv1" customClass="GradientViewAlt" customModule="Peeris" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n1-bd-wOf" customClass="DesignableButton" customModule="Peeris" customModuleProvider="target">
+                                        <rect key="frame" x="115" y="445.5" width="145" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="SR9-uM-w6U"/>
+                                            <constraint firstAttribute="width" constant="145" id="jDI-ci-b6p"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Sign in">
+                                            <color key="titleColor" red="0.071765728294849396" green="0.57977670431137085" blue="0.8874015212059021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="22"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                <real key="value" value="3.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                <real key="value" value="0.23000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                                <size key="value" width="0.0" height="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signinPressed:" destination="D4L-6g-YMW" eventType="touchUpInside" id="b1T-nj-Lc4"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65k-R7-0Zs" customClass="DesigableInput" customModule="Peeris" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="313.5" width="335" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="6nW-m0-RN2"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZv-pB-0fv" customClass="DesigableInput" customModule="Peeris" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="377.5" width="335" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="kjS-4g-mpY"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="65k-R7-0Zs" firstAttribute="centerY" secondItem="it6-0w-rv1" secondAttribute="centerY" id="9Zz-aU-uUf"/>
+                                    <constraint firstItem="gZv-pB-0fv" firstAttribute="top" secondItem="65k-R7-0Zs" secondAttribute="bottom" constant="24" id="Dio-NL-JQJ"/>
+                                    <constraint firstItem="gZv-pB-0fv" firstAttribute="leading" secondItem="it6-0w-rv1" secondAttribute="leading" constant="20" id="E1T-xT-Py0"/>
+                                    <constraint firstAttribute="trailing" secondItem="gZv-pB-0fv" secondAttribute="trailing" constant="20" id="G63-zr-SHJ"/>
+                                    <constraint firstItem="5n1-bd-wOf" firstAttribute="centerX" secondItem="gZv-pB-0fv" secondAttribute="centerX" id="V43-3D-xHb"/>
+                                    <constraint firstItem="65k-R7-0Zs" firstAttribute="centerX" secondItem="it6-0w-rv1" secondAttribute="centerX" id="glH-dn-xr3"/>
+                                    <constraint firstItem="5n1-bd-wOf" firstAttribute="top" secondItem="gZv-pB-0fv" secondAttribute="bottom" constant="28" id="hr1-R6-tWm"/>
+                                    <constraint firstAttribute="trailing" secondItem="65k-R7-0Zs" secondAttribute="trailing" constant="20" id="mTI-Yt-60K"/>
+                                    <constraint firstItem="65k-R7-0Zs" firstAttribute="leading" secondItem="it6-0w-rv1" secondAttribute="leading" constant="20" id="uah-r3-SyP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.031372549020000001" green="0.58039215690000001" blue="0.99607843139999996" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.074509803920000006" green="0.7725490196" blue="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image3" translatesAutoresizingMaskIntoConstraints="NO" id="eO5-mi-b4U">
+                                <rect key="frame" x="0.0" y="10" width="375" height="263"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="263" id="DiD-bu-9p5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.29603341221809387" green="0.75252896547317505" blue="0.93869894742965698" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eO5-mi-b4U" firstAttribute="top" secondItem="wym-jS-RJA" secondAttribute="top" constant="10" id="E9G-mi-q9U"/>
+                            <constraint firstItem="69j-BO-NNf" firstAttribute="leading" secondItem="PnS-uK-ZDq" secondAttribute="leading" id="Fe5-NY-ScD"/>
+                            <constraint firstItem="it6-0w-rv1" firstAttribute="top" secondItem="wym-jS-RJA" secondAttribute="top" id="GGl-Gk-s5w"/>
+                            <constraint firstItem="69j-BO-NNf" firstAttribute="top" secondItem="wym-jS-RJA" secondAttribute="top" id="Ggf-Ue-THB"/>
+                            <constraint firstItem="it6-0w-rv1" firstAttribute="leading" secondItem="PnS-uK-ZDq" secondAttribute="leading" id="VDr-7V-1WN"/>
+                            <constraint firstItem="PnS-uK-ZDq" firstAttribute="trailing" secondItem="69j-BO-NNf" secondAttribute="trailing" id="Vhy-ng-MdE"/>
+                            <constraint firstItem="PnS-uK-ZDq" firstAttribute="bottom" secondItem="69j-BO-NNf" secondAttribute="bottom" id="fov-AF-ky0"/>
+                            <constraint firstItem="eO5-mi-b4U" firstAttribute="leading" secondItem="wym-jS-RJA" secondAttribute="leading" id="oi6-Rt-P0n"/>
+                            <constraint firstItem="eO5-mi-b4U" firstAttribute="trailing" secondItem="PnS-uK-ZDq" secondAttribute="trailing" id="tM6-D6-046"/>
+                            <constraint firstItem="PnS-uK-ZDq" firstAttribute="trailing" secondItem="it6-0w-rv1" secondAttribute="trailing" id="y9m-ak-L6F"/>
+                            <constraint firstItem="PnS-uK-ZDq" firstAttribute="bottom" secondItem="it6-0w-rv1" secondAttribute="bottom" id="yAX-XF-MTh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PnS-uK-ZDq"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                <color key="value" red="0.031372549019607843" green="0.58039215686274503" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                <color key="value" red="0.074509803921568626" green="0.77254901960784317" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="UKX-eN-4Ha"/>
+                    <connections>
+                        <outlet property="emailField" destination="65k-R7-0Zs" id="7aa-UG-zDj"/>
+                        <outlet property="passwordField" destination="gZv-pB-0fv" id="DGf-tW-Cr3"/>
+                        <outlet property="signin" destination="5n1-bd-wOf" id="Zds-f5-Lnp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cE8-ea-OYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112.8" y="-661.61919040479768"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="architecture-buildings-city-408951.jpg" width="4887" height="2749"/>
+        <image name="image3" width="1280" height="720"/>
+    </resources>
+</document>

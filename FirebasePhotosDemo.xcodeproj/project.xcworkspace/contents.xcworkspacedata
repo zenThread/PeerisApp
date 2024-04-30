@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FirebasePhotosDemo.xcodeproj">
+      location = "group:../../../GoogleService-Info 22-31-09-339.plist">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
